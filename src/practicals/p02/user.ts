@@ -4,11 +4,6 @@ export class User {
     private _age:number = 0
     static BIRTH_YEAR = 2000
 
-    constructor(firstname:string,lastname:string){
-        this.firstname = firstname
-        this.lastname = lastname
-    }
-
 
     setFirstname(firstname:string){
             this.firstname = firstname
