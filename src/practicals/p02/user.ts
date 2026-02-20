@@ -21,7 +21,7 @@ export class User {
         return this._age
     }
 
-    getFullname(){
+    getFullName(){
         return `${this.firstname} ${this.lastname}`
     }
 }
