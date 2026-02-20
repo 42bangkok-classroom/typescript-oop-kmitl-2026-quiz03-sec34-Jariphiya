@@ -11,19 +11,12 @@ export class User {
 
 
     setFirstname(firstname:string){
-        if(this.firstname !== ""){
             this.firstname = firstname
-        }else{
-            this.firstname = ""
-        }
+
     }
 
     setLastname(lastname:string){
-        if(this.lastname !== ""){
             this.lastname = lastname
-        }else{
-            this.lastname = ""
-        }
     }
 
     setAge(ages:number){
@@ -35,6 +28,11 @@ export class User {
     }
 
     getFullName(){
+        if(this.firstname && this.lastname){
         return `${this.firstname} ${this.lastname}`
+        }else{
+            return ""
+        }
     }
+
 }
