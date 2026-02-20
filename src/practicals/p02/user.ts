@@ -28,11 +28,8 @@ export class User {
     }
 
     getFullName(){
-        if(this.firstname && this.lastname){
+        if(!this.firstname && !this.lastname)return ""
         return `${this.firstname} ${this.lastname}`
-        }else{
-            return ""
-        }
     }
 
 }
