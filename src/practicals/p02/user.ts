@@ -11,7 +11,7 @@ export class User {
 
 
     setFirstname(firstname:string){
-        if(this.firstname){
+        if(this.firstname !== ""){
             this.firstname = firstname
         }else{
             this.firstname = ""
@@ -19,7 +19,7 @@ export class User {
     }
 
     setLastname(lastname:string){
-        if(this.lastname){
+        if(this.lastname !== ""){
             this.lastname = lastname
         }else{
             this.lastname = ""
