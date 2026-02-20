@@ -5,7 +5,6 @@ export class User {
     static BIRTH_YEAR = 2000
 
     setFirstname(firstname:string){
-
         this.firstname = firstname
     }
 
@@ -22,6 +21,6 @@ export class User {
     }
 
     getFullName(){
-        return `${this.firstname} ${this.lastname}`
+        return `${this.firstname.trim} ${this.lastname.trim}`
     }
 }
