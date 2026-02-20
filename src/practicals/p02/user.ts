@@ -9,12 +9,21 @@ export class User {
         this.lastname = lastname
     }
 
+
     setFirstname(firstname:string){
-        this.firstname = firstname
+        if(this.firstname){
+            this.firstname = firstname
+        }else{
+            this.firstname = ""
+        }
     }
 
     setLastname(lastname:string){
-        this.lastname = lastname
+        if(this.lastname){
+            this.lastname = lastname
+        }else{
+            this.lastname = ""
+        }
     }
 
     setAge(ages:number){
