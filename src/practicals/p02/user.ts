@@ -5,6 +5,7 @@ export class User {
     static BIRTH_YEAR = 2000
 
     setFirstname(firstname:string){
+
         this.firstname = firstname
     }
 
