@@ -13,10 +13,8 @@ export class Warrior extends Character {
   }
 
   receiveDamage(damage:number):number{
-    this.health -= damage
+    this.health = this.health - (damage * (90 / 100))
     return this.health
   }
-
-
 
 }
